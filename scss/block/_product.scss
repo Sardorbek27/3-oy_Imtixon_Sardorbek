@@ -1,0 +1,45 @@
+.product-section {
+    background-image: url("../images/product-Bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.services__main-title {
+    width: 539px;
+    margin: 0 auto;
+}
+.services__product-title {
+    @include textStyle($color:#22343D, $fontSize:32px, $fontWeight:700);
+    text-align: center;
+    margin-bottom: 66px;
+}
+.services__product-turlari {
+    @include display();
+}
+.turlari {
+    width: 1095px;
+    margin: 0 auto;
+}
+.turlari__services-title {
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+.turlari__services-part{
+    width: 240px;
+    height: 178px;
+}
+.services-bottom{
+    padding-bottom: 240px;
+}
+.services-bottom > div{
+    margin: 0 auto;
+    display: block;
+}
+
+.bottom__link {
+    @include button();
+    width: 175px;
+    height: 53px;
+}
+.bottom__link-text {
+    @include textStyle($color:#fff, $fontWeight:700);
+}

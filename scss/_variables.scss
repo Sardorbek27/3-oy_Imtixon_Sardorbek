@@ -1,0 +1,22 @@
+$blueColor:#02897A;
+
+@mixin display($items:center, $space:space-between,$direction:row){
+    display: flex;
+    align-items: $items;
+    justify-content: $space;
+    flex-direction: $direction;
+}
+@mixin textStyle($color:#303030, $fontSize:16px, $fontWeight:400){
+    color: $color;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: $fontWeight;
+}
+@mixin button($width:110px, $colorBg:#02897A, $borderr:4px, $padding:16px 0){
+    @include textStyle($color:#fff, $fontSize:16px, $fontWeight:400);
+    padding: $padding;
+    width: $width;
+    background-color: $colorBg;
+    border-radius: $borderr;
+    text-align: center;
+}

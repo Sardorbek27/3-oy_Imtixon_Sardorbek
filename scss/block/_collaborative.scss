@@ -1,0 +1,42 @@
+.coloborative {
+    @include display();
+    padding-bottom: 90px;
+}
+.coloborative__content {
+    width: 486px;
+    height: 435px;
+}
+.coloba__span {
+    @include textStyle($fontSize:16px, $fontWeight:600);
+    margin-bottom: 8px;
+}
+.coloba__tytle {
+    @include textStyle($fontSize:32px, $fontWeight:700);
+}
+.coloba__content {
+    width: 486px;
+    height: 90px;
+}
+.coloba__content + .coloba__content{
+    margin-bottom: 25px;
+}
+.combo__tytle1 {
+    @include textStyle($fontSize:16px, $fontWeight:600);
+    margin-bottom: 12px;
+}
+.combo__text {
+    @include textStyle();
+}
+.combo__tytle2 {
+    @include textStyle($fontSize:16px, $fontWeight:600);
+    margin-bottom: 12px;
+}
+.coloba__content-p {
+    width: 486px;
+    height: 55px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+.coloba__content-text {
+
+}

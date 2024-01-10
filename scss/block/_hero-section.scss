@@ -1,0 +1,133 @@
+.hero {
+    @include display();
+    padding-top: 25px;
+    padding-bottom: 114px;
+    position: relative;
+}
+.hero__content {
+    position: relative;
+    z-index: 2;
+    width: 518px;
+    height:331px; 
+}
+.hero__tytle {
+    width: 420px;
+    height: 120px;
+    @include textStyle($fontWeight:700, $fontSize:40px);
+    line-height: 60px;
+}
+.hero__text-wrapper {
+    width: 458px;
+    height: 95px;
+    color: #22343D;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    margin-bottom: 45px;
+}
+.hero__link {
+    @include button ();
+    max-width: 175px;
+    height: 53px;
+    display: inline-block;
+}
+.header__link-a{
+    max-width: 350px;
+    @include textStyle($color:#fff, $fontWeight:700);
+}
+.hero__link {
+    @include textStyle($color:#FFF, $fontWeight:700);
+}
+.hero__link2 {
+    max-width: 175px;
+    position: relative;
+    @include textStyle($color:#02897A, $fontWeight:700);
+    text-decoration: underline;
+}
+.hero-img{
+    position: absolute;
+    top: 50px;
+    right: -27px;
+}
+.hero__link2::before{
+    content: url(../images/play-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hero-mobile-img{
+    display: none;
+}
+@media (max-width:955px){
+    .hero{
+        width: 100%;
+    }
+    .hero__content{
+        width: 100%;
+    }
+}
+@media (max-width:620px){
+    .hero-img{
+        display: none;
+    }
+    .hero-mobile-img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero__content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .hero__tytle {
+        @include textStyle($fontWeight:700, $fontSize:36px);
+        width: 100%;
+        display: inline-block;
+    }
+    .hero__text-wrapper {
+        width: 100%;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .hero__doc {
+        width: 100%;
+        display: inline-block;
+    }
+    .hero__link-a {
+        width: 100%;
+
+        display: block;
+    }
+    .hero__link {
+         width: 100%;
+         height: auto;
+        display: inline-block;
+    }
+    .hero__link2 {
+         width: 100%;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+@media (max-width:400px){
+    .header__link-a{
+        width:100%;
+        @include textStyle($color:#fff, $fontWeight:700);
+    }
+    .hero__link {
+        @include textStyle($color:#FFF, $fontWeight:700);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .hero__link2 {
+        width: 100%;
+    }
+}

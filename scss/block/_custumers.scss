@@ -1,0 +1,56 @@
+.customer-section {
+}
+.customer {
+    @include display();
+    flex-direction: row-reverse;
+    padding-bottom: 150px;
+}
+.customer__content {
+    width: 486px;
+    height: 427px;
+}
+.custom__span {
+    @include textStyle($fontSize:16px, $fontWeight:600);
+    margin-bottom: 8px;
+}
+.custom__tytle {
+    @include textStyle($fontSize:32px, $fontWeight:700);
+    margin-bottom: 23px;
+}
+.custom__content-p{
+    width: 486px;
+    height: 78px;
+}
+.custom__content-text{
+    @include textStyle();
+    margin-bottom: 30px;
+}
+.custom__content {
+    @include display($space:none);
+    margin-bottom: 30px;
+    width: 450px;
+}
+.sell__text1 {
+    @include textStyle();
+}
+.sell__text2 {
+    @include textStyle();
+}
+.sell__text3 {
+    @include textStyle();
+}
+.custom__icon{
+    margin-right: 30px;
+}
+.sell__text1-p{
+    width: 365px;
+    height: 52px;
+}
+.sell__text2-p{
+    width: 325px;
+    height: 52px;
+}
+.sell__text3-p{
+    width: 325px;
+    height: 52px;
+}
