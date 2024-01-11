@@ -4,10 +4,11 @@
     background-size: 100%;
 }
 .services__main-title {
-    width: 539px;
+    max-width: 539px;
     margin: 0 auto;
 }
 .services__product-title {
+    max-width: 539px;
     @include textStyle($color:#22343D, $fontSize:32px, $fontWeight:700);
     text-align: center;
     margin-bottom: 66px;
@@ -42,4 +43,35 @@
 }
 .bottom__link-text {
     @include textStyle($color:#fff, $fontWeight:700);
+}
+@media (max-width:955px){
+    .turlari{
+        flex-direction: column;
+        width: 100%;
+    }
+    .turlari__card{
+        align-items: center;
+    }
+    .turlari__services-part{
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .turlari-img{
+        margin-left: 90px;
+    }
+    .services >.services__main-title{
+        width: 100%;
+    }
+    .hizmatlat__product-content{
+        width: 100%;
+    }
+    .product-section {
+        background-image: url("../images/product-Bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+@media (max-width:620px){
+
 }

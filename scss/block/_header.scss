@@ -1,17 +1,19 @@
-// .site-header {
-// }
 .header {
     @include display();
-    margin-top: 19px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    z-index: 3;
+    position: fixed;
+    width: 1200px;
+
 }
 .header__logo-link {
     display: inline-block;
 }
 .header__navbar {
-    @include display();
+    @include display($space:none);
 }
-// .navbar {
-// }
 .navbar-list {
     width: 379px;
     @include display();
@@ -46,7 +48,6 @@
             color: #02897A;
         }
     }
-    
 }
 .header__link-a-text{
     @include textStyle($color:#173A56, $fontWeight:600);
@@ -73,6 +74,14 @@
     background-color: transparent;
     display: none;
 }
+@media (max-width:1250px){
+    .header{
+        width: 100%;
+    }
+    .navbar{
+    padding-right: 30px;
+    }
+}
 @media (max-width:955px){
     .navbar{
         display: none;
@@ -80,6 +89,8 @@
     .table-header{
         display: flex;
         align-items: center;
+        justify-content: right;
+        padding-right: 40px;
     }
     .hamburger-btn{
         display: block;
@@ -94,6 +105,9 @@
     .hamburger-btn2{
         display: none;
     }
+    .header{
+        width: 100%;
+    }
 }
 @media (max-width:620px){
     .table-header{
@@ -101,5 +115,9 @@
     }
     .hamburger-btn2{
         display: block;
+        padding-right: 30px;
+    }
+    .site-header {
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
     }
 }

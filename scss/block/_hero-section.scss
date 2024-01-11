@@ -1,6 +1,6 @@
 .hero {
     @include display();
-    padding-top: 145px;
+    padding-top: 156px;
     padding-bottom: 114px;
     position: relative;
 }
@@ -33,6 +33,9 @@
     height: 53px;
     display: inline-block;
     @include textStyle( $color:#FFF, $fontWeight:700);
+    &:hover{
+        opacity: 0.8;
+    }
 }
 .header__link-a{
     max-width: 380px;
@@ -44,10 +47,13 @@
     @include textStyle($color:#02897A, $fontWeight:700);
     text-decoration: underline;
     margin-left: 55px;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 .hero-img{
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: -27px;
 }
 .hero__link2::before{
@@ -57,6 +63,9 @@
     position: absolute;
     left: -25px;
     top: 0;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 .hero-mobile-img{
     display: none;
@@ -67,6 +76,7 @@
         padding-top: 50px;
     }
     .hero__content{
+        padding-top: 10px;
         width: 100%;
     }
 }
@@ -104,18 +114,35 @@
     }
     .hero__link-a {
         width: 100%;
-
         display: block;
+        &:hover{
+            opacity: 0.8;
+        }
     }
     .hero__link {
          width: 100%;
          height: auto;
         display: inline-block;
+        &:hover{
+            opacity: 0.8;
+        }
     }
     .hero__link2 {
          width: 100%;
         display: inline-block;
         margin-left: 5px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .hero__link2::before{
+        left: 0;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .hero-mobile-img{
+        padding-top: 70px;
     }
 }
 @media (max-width:576px){
@@ -134,8 +161,14 @@
         @include textStyle($color:#FFF, $fontWeight:700);
         margin-bottom: 15px;
         margin-top: 10px;
+        &:hover{
+            opacity: 0.8;
+        }
     }
     .hero__link2 {
         width: 100%;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
