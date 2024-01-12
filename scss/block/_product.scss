@@ -2,6 +2,7 @@
     background-image: url("../images/product-Bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 214px;
 }
 .services__main-title {
     max-width: 539px;
@@ -40,6 +41,9 @@
     @include button();
     width: 175px;
     height: 53px;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 .bottom__link-text {
     @include textStyle($color:#fff, $fontWeight:700);
@@ -66,11 +70,11 @@
     .hizmatlat__product-content{
         width: 100%;
     }
-    .product-section {
-        background-image: url("../images/product-Bg.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    // .product-section {
+    //     background-image: url("../images/product-Bg.png");
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    // }
 }
 @media (max-width:620px){
 

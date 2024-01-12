@@ -5,6 +5,8 @@
 .managment__content {
     width: 486px;
     height: 435px;
+    position: relative;
+    z-index: 2;
 }
 .manage__span {
     @include textStyle($fontSize:16px, $fontWeight:600);
@@ -31,4 +33,64 @@
 .info__tytle2 {
     @include textStyle($fontSize:16px, $fontWeight:600);
     margin-bottom: 12px;
+}
+.manage__img-responsive{
+    width: 349px;
+    height: 306px;
+    display: none;
+}
+@media (max-width:1107px){
+    .management{
+        width: 100%;
+    }
+    .manage__img{
+        position: absolute;
+        // top: 100px;
+        right: -27px;
+        z-index: 1;
+    }
+    .manage{
+        margin-top: 50px;
+    }
+    .manage__tytle {
+        margin-bottom: 16px;
+    }
+}
+@media (max-width:885px){
+    .managment{
+        flex-direction: column;
+    }
+    .bottom{
+        padding-bottom: 138px;
+    }
+    .manage__img-responsive{
+        display: block;
+        width: 539px;
+        height: 423px;
+    }
+    .manage__img{
+        display: none;
+    }
+    .manage{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .manage > .info{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width:620px){
+    .manage__img-responsive{
+        width: 100%;
+        height: auto;
+    }
+  .info{
+    display: inline-block;
+  }
+  .manage__tytle{
+    
+  }
 }

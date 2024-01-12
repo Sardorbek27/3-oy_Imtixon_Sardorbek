@@ -1,5 +1,3 @@
-.customer-section {
-}
 .customer {
     @include display();
     flex-direction: row-reverse;
@@ -8,6 +6,8 @@
 .customer__content {
     width: 486px;
     height: 427px;
+    position: relative;
+    z-index: 2;
 }
 .custom__span {
     @include textStyle($fontSize:16px, $fontWeight:600);
@@ -53,4 +53,53 @@
 .sell__text3-p{
     width: 325px;
     height: 52px;
+}
+@media (max-width:1107px){
+    .customer{
+        flex-direction: column;
+    }
+    .custom{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto; 
+    }
+    .custom__content-p{
+        display: block;
+        margin: 0 auto; 
+    }
+    .ul{
+        display: inline-block;
+        margin: 0 auto; 
+    }
+    .custom__tytle {
+        margin-bottom: 16px;
+    }
+    .custom__img{
+        display: inline-block;
+    }
+    .manage{
+        height: 255px;
+    }
+}
+@media (max-width:885px){
+    // .custom{
+    //     flex-direction: column;
+    // }
+    // .custom{
+    //     width: 100%;
+    //     margin-top: 50px;
+    //     text-align: center;
+    // }
+    // .custom > .sell{
+    //     width: 100%;
+    //     margin: 0 auto;
+    //     text-align: center;
+    // }
+}
+@media (max-width:620px){
+//   .sell{
+//     display: inline-block;
+//   }
 }

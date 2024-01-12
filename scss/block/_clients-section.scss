@@ -1,0 +1,78 @@
+.clients-section {
+    margin-bottom: 157px;
+}
+.clients-tytle {
+    @include textStyle($color:#22343D, $fontSize:34px, $fontWeight:700);
+    line-height: normal;
+    text-align: center;
+}
+
+.clients-text {
+    @include textStyle($color:#22343D, $fontSize:16px, $fontWeight:500);
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients-list {
+    @include display();
+}
+.say{
+    width: 327px;
+    height: 236px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    background: var(--light-background, #FFF);
+}
+
+.clients-list__item {
+    @include textStyle($color:#22343D, $fontSize:24px, $fontWeight:700);
+    line-height: 40px;
+    padding-top: 16px;
+
+}
+.say__p-text-div{
+    width: 275px;
+    height: 140px;
+}
+.say__p-text-div > img{
+    margin-left: 20px;
+}
+.say__text {
+    @include textStyle($color:var(--second-text-color, #737373), $fontSize:16px, $fontWeight:400);
+    line-height: 28px; /* 171.429% */
+    letter-spacing: 0.2px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.c {
+    display: flex;
+    align-items: center;
+}
+.say__zero {
+    margin-top: 16px;
+    margin-right: 14px;
+    margin-left: 20px;
+}
+.say__zero-pus {
+    @include display($space:none);
+    flex-direction: column;
+    text-align: start;
+}
+.say__span {
+    @include textStyle($color:#02897A, $fontSize:16px, $fontWeight:600);
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.say__p-text {
+    @include textStyle($color:#252B42, $fontSize:14px, $fontWeight:500);
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+}
+@media (max-width:1090px){
+    .clients-list{
+        flex-direction: column;
+    }
+    .say{
+        margin-bottom: 32px;
+    }
+}

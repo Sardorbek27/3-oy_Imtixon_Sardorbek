@@ -1,0 +1,139 @@
+.pricetable-section {
+    margin-bottom: 150px;
+}
+.pricetable-tytle {
+    @include textStyle($color:#22343D, $fontSize:34px, $fontWeight:700);
+    line-height: normal;
+    text-align: center;
+}
+.pricetable-text-div {
+    @include textStyle($color:#22343D, $fontSize:16px, $fontWeight:500);
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pricetable-list {
+    @include display();
+}
+
+
+.pricetable-list__item {
+    width: 323px;
+    height: 456px;
+    @include display($space:none);
+    flex-direction: column;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    // padding-top: ;
+    &:hover{
+        background: #02897A;
+        .table__tytle{
+            color: #FFF;
+        }
+        .table__text {
+            color: #FFF;
+        }
+        .price{
+            color: #FFF;
+        }
+        .table__zero{
+            color: #FFF;
+        }
+        .table__zero-pus {
+            color: #FFF;
+        }
+        .table__span {
+            color: #FFF;
+        }
+        .table__p-text{
+            color: #FFF;
+        }
+        .t{
+            color: #FFF;
+        }
+        .table__p-content{
+            color: #FFF;
+        }
+        .pricetable__link{
+            background-color: #FFF;
+            color: #02897A;
+        }
+    }
+}
+.table__tytle {
+    @include textStyle($color:#22343D, $fontSize:24px, $fontWeight:700);
+    line-height: 40px;
+    padding-top: 25px;
+}
+.table__text {
+    @include textStyle($color:#22343D, $fontSize:16px, $fontWeight:400);
+    line-height: 40px;
+}
+.price {
+    @include display($space:none);
+    flex-direction: column;
+    margin-top: 38px;
+}
+.t{
+    display: flex;
+    align-items: center;
+}
+.table__zero {
+    @include textStyle($color:#02897A, $fontSize:76px, $fontWeight:700);
+    text-align: center;
+    line-height: 100px; /* 131.579% */
+    letter-spacing: 0.2px;
+    margin-right: 8px;
+}
+.table__zero-pus {
+    @include display($space:none);
+    flex-direction: column;
+    text-align: start;
+}
+.table__span {
+    width: 92px;
+    height: 29px;
+
+@include textStyle($color:#02897A, $fontSize:24px, $fontWeight:700);
+font-family: "Inter", sans-serif;
+line-height: 30px;
+letter-spacing: 0.1px;
+
+}
+.table__p-text {
+    @include textStyle($color:var(--second-text, #AFAFAF), $fontSize:16px, $fontWeight:400);
+    line-height: 19px; /* 118.75% */
+    letter-spacing: 0.1px;
+}
+.table__p-content{
+    margin-bottom: 16px;
+}
+.table__p-content {
+    @include textStyle($color:#22343D, $fontSize:16px, $fontWeight:500);
+    font-family: "Inter", sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.pricetable__link {
+    @include display ($space:center);
+    display: inline-block;
+    @include button($width:139px, $colorBg:#02897A, $borderr:8px, $padding:11px 19px 11px 18px);
+    margin-top: 33px;
+    &:hover{
+        opacity: 0.8;
+    } 
+    .table:hover{
+        background-color: #02897A;
+        columns: #fff;
+    }
+}
+@media (max-width:1090px){
+    .pricetable-list{
+        flex-direction: column;
+    }
+    .pricetable-list__item{
+        margin-bottom: 32px;
+    }
+}

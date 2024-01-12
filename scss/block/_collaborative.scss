@@ -5,6 +5,7 @@
 .coloborative__content {
     width: 486px;
     height: 435px;
+    
 }
 .coloba__span {
     @include textStyle($fontSize:16px, $fontWeight:600);
@@ -37,6 +38,64 @@
     margin-top: 23px;
     margin-bottom: 30px;
 }
-.coloba__content-text {
+.coloba__img-responsive{
+    display: none;
+}
 
+@media (max-width:1090px){
+    .coloborative{
+        width: 100%;
+        flex-direction: column;
+    }
+    .coloba__img{
+        position: absolute;
+        right: -27px;
+        z-index: 1;
+    }
+    .coloba{
+        margin-top: 50px;
+    }
+    .coloba__tytle {
+        margin-bottom: 16px;
+    }
+    .coloba > .coloba__content-p, .combo {
+        align-items: center;
+        display: block;
+        margin: 0 auto; 
+    }
+}
+@media (max-width:885px){
+    .coloba{
+        flex-direction: column;
+    }
+    .combo{
+        padding-bottom: 138px;
+    }
+    .coloba__img-responsive{
+        display: block;
+        width: 539px;
+        height: 423px;
+    }
+    .coloba__img{
+        display: none;
+    }
+    .coloba{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .coloba > .sell{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width:620px){
+    .coloba__img-responsive{
+        width: 100%;
+        height: auto;
+    }
+  .combo{
+    display: inline-block;
+  }
 }
